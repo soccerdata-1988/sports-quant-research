@@ -20,3 +20,7 @@ A collection of Python tools for sports odds analysis, rating modeling, and data
 
 ## 📧 Contact
 Email: dataanalyst@example.com
+---
+## Update Notice
+Project ongoing & continuously updated.
+More sports rating conversion、fatigue correction and market reverse modules will be added subsequently.
