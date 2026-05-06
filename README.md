@@ -19,7 +19,7 @@ A collection of Python tools for sports odds analysis, rating modeling, and data
 5.  **Poisson Outcome Forecasting**: Simulate goal distributions to calculate win/draw/loss probabilities
 
 ## 📧 Contact
-Email: dataanalyst@Outlook.com
+Email: dataanalyst1988@Outlook.com
 ---
 ## Update Notice
 Project ongoing & continuously updated.
