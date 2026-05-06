@@ -24,3 +24,31 @@ Email: dataanalyst@example.com
 ## Update Notice
 Project ongoing & continuously updated.
 More sports rating conversion、fatigue correction and market reverse modules will be added subsequently.
+
+
+# Football Quantitative Odds Analysis Model
+A 5-layer, locally runnable Python model for football odds analysis, built on 8 years of hands-on experience in sports data analysis.
+
+## Project Overview
+This model reconstructs the full logic of bookmaker pricing and market structure analysis, with a focus on noise filtering and reliable signal extraction.
+
+### 5-Layer Architecture
+1. **True Team Strength (TrueTS)**  
+   Calculates precise generalized strength based on league tier, squad strength, home advantage, form, fatigue, and head-to-head bias.
+2. **Probability Mapping**  
+   Converts strength difference into win/draw/loss probabilities without bookmaker margin.
+3. **Theoretical Fair Odds**  
+   Applies structured margin to generate "true" opening odds, simulating bookmaker pricing logic.
+4. **Market Structure & Kelly Criterion**  
+   Compares theoretical vs. real odds to identify protection and trap signals.
+5. **Final Decision Engine**  
+   Integrates all layers to output actionable betting recommendations.
+
+## Features
+- Fully local, no external dependencies or API calls
+- Built-in noise filtering to eliminate unreliable signals
+- Transparent and reproducible logic, with every parameter documented
+
+## Quick Start
+```bash
+python example_usage.py
