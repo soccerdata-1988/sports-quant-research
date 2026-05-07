@@ -51,30 +51,5 @@ This model reconstructs the full logic of bookmaker pricing and market structure
 
 ## Quick Start
 ```bash
+
 python example_usage.py
-
-
-
-Personal Research & Professional Profile
- 
-This repository accumulates 8 years of in-depth experience in football data analytics, early odds structure research, and Kelly value raw data processing.
- 
-Research Focus
- 
-- Specialized in initial early odds analysis, staying away from mid-market and late market fluctuation interference
-​
-- Clearly distinguish two independent data logic systems:
-Odds – Implied Probability – Payout Rate linkage system
-Standalone Kelly Value analysis system
-​
-- Expert in raw database cleaning: deduplication, redundancy removal, abnormal noise filtering and invalid market data elimination, outputting logical and reliable standard datasets
- 
-Technical Ability
- 
-- Developed full football quantitative toolkits with Python, covering odds verification, risk filtering, team fitness & match intention modeling, and match probability evaluation
-​
-- Capable of customizing data processing scripts and structured database solutions according to business demands
-​
-- Proficient in multi-source odds comparison and bookmaker pricing logic analysis
- 
-Note: All core judgment rules and exclusive research methodologies are not fully open-sourced, only public framework and technical capabilities are displayed here
