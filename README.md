@@ -1,22 +1,50 @@
-# sports-quant-research
-Python tools sports odds analysis
-# Sports Quantitative Research
-A collection of Python tools for sports odds analysis, rating modeling, and data validation.
+sports-quant-research
+ 
+Python tools for football odds analysis, Kelly value processing and quantitative modeling
 
-## 📂 Project Structure
-- `payout_check.py`: Odds-Probability-Payout closed-loop consistency check
-- `kelly_static_filter.py`: Fixed-position Kelly filter for stable risk-control signals
-- `betfair_rating_reverse.py`: Betfair odds to implied team rating & strength difference
-- `acwr_fatigue_model.py`: ACWR workload ratio + simplified fatigue coefficient
-- `poisson_5in1_model.py`: Poisson-based match outcome probability calculator
-- `data_source_audit.py`: Structural defect detection for OKOOO and other odds data
-
-## 🚀 Core Methodologies
-1.  **Odds Consistency Validation**: Detect stitched, unsynchronized, or intercepted data
-2.  **Kelly Static Analysis**: Identify bookmaker's stable pricing signals
-3.  **Implied Rating Reverse-Engineering**: Derive fundamental strength from raw exchange odds
-4.  **Fatigue & Workload Modeling**: Estimate match fitness using schedule and travel data
-5.  **Poisson Outcome Forecasting**: Simulate goal distributions to calculate win/draw/loss probabilities
+Overview 
+This repository contains a collection of practical Python tools and research results accumulated over 8 years of professional experience in football data analytics, odds structure research, and Kelly value data processing. 
+The core focus is on extracting stable, high-quality signals from massive raw sports datasets, with a long-term focus on initial early odds analysis to avoid noise from mid/late market fluctuations. 
+Core Modules & Tools 
+-  acwr_fatigue_model : Team physical condition and match fatigue modeling
+-  betfair_rating_reverse : Betfair odds-based team strength rating and reverse modeling
+-  data_source_audit : Multi-source raw data verification, deduplication, and consistency checks
+-  football_odds_model : Football odds structural analysis and market logic modelingood​
+-  kelly_static_filter.py : Professional Kelly value static filtering, noise removal, and invalid data elimination
+​
+-  payout_check.py : Odds payout rate calculation, cross-market comparison, and self-consistency verification
+​
+-  poisson_5in1_model : Poisson distribution-based multi-dimensional match probability prediction toolset
+ 
+ 
+ 
+Core Capabilities & Research Focus
+ 
+1. Specialized Early Odds Research
+ 
+- Long-term focus on initial early odds, avoiding interference from market sentiment and late fluctuations
+​
+- Independent framework for analyzing bookmaker pricing logic and structural patterns
+ 
+2. Advanced Data Cleansing
+ 
+- Proficient in distinguishing two independent systems:
+​
+- Odds → Implied Probability → Payout Rate linkage logic
+​
+- Standalone Kelly value analysis system
+​
+- Expert in removing duplicates, redundancy, noise, and invalid market data from large raw databases, delivering standardized, reliable datasets
+ 
+3. Quantitative & Custom Tool Development
+ 
+- Built a full set of Python-based tools for odds validation, risk filtering, and match probability modeling
+​
+- Capable of customizing scripts and processing pipelines according to specific business requirements
+  
+Note
+This repository showcases public research frameworks, technical implementations, and practical tools.
+All core judgment rules, exclusive filtering logic, and internal methodologies are not fully open-sourced, only progressive iterations and public capabilities are displayed here.
 
 ## 📧 Contact
 Email: dataanalyst1988@Outlook.com
@@ -26,30 +54,3 @@ Project ongoing & continuously updated.
 More sports rating conversion、fatigue correction and market reverse modules will be added subsequently.
 
 
-# Football Quantitative Odds Analysis Model
-A 5-layer, locally runnable Python model for football odds analysis, built on 8 years of hands-on experience in sports data analysis.
-
-## Project Overview
-This model reconstructs the full logic of bookmaker pricing and market structure analysis, with a focus on noise filtering and reliable signal extraction.
-
-### 5-Layer Architecture
-1. **True Team Strength (TrueTS)**  
-   Calculates precise generalized strength based on league tier, squad strength, home advantage, form, fatigue, and head-to-head bias.
-2. **Probability Mapping**  
-   Converts strength difference into win/draw/loss probabilities without bookmaker margin.
-3. **Theoretical Fair Odds**  
-   Applies structured margin to generate "true" opening odds, simulating bookmaker pricing logic.
-4. **Market Structure & Kelly Criterion**  
-   Compares theoretical vs. real odds to identify protection and trap signals.
-5. **Final Decision Engine**  
-   Integrates all layers to output actionable betting recommendations.
-
-## Features
-- Fully local, no external dependencies or API calls
-- Built-in noise filtering to eliminate unreliable signals
-- Transparent and reproducible logic, with every parameter documented
-
-## Quick Start
-```bash
-
-python example_usage.py
